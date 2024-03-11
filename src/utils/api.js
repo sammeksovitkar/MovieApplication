@@ -12,7 +12,7 @@ export const fetchData = async (url, params) => {
     const { data } = await axios.get(BASE_URL + url, { headers, params });
     return data;
   } catch (e) {
-    console.log(e);
+    console.log(e, "adf");
     return e;
   }
 };
