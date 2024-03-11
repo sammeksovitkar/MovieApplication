@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import useFetch from "../../../hooks/useFetch";
 import { useSelector } from "react-redux";
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
-import Img from "../../../components/lazyLoadImage/Img";
+// import Img from "../../../components/lazyLoadImage/Img";
 
 const HeroBanner = () => {
   const [background, setBackground] = useState("");
@@ -31,7 +31,8 @@ const HeroBanner = () => {
     <div className="heroBanner">
       {!loading && (
         <div className="backdrop-img">
-          <Img src={background} />
+          {/** <Img src={background} /> */}
+          Hero banner
         </div>
       )}
       <div className="opacity-layer"></div>
